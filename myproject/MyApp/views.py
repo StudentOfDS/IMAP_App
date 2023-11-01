@@ -4,11 +4,11 @@ from . import views
 
  
 
-urlpatterns = [ 
+# urlpatterns = [ 
 
-    path('my-view/', views.my_view, name='my-view'), 
+#     path('my-view/', views.my_view, name='my-view'), 
 
-] 
+# ] 
 
  
 def my_view(request): 
