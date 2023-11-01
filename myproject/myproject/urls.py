@@ -19,10 +19,12 @@ from django.urls import path
 from django.contrib import admin 
 from django.urls import path, include 
 
-urlpatterns = [ 
+from django.contrib import admin
+from django.urls import path, include
 
-    path('admin/', admin.site.urls), 
+urlpatterns = [
+    path('admin/', admin.site.urls),  
+    path('myApp/', include('MyApp.urls')),  
+   
+]
 
-    path('appname/', include('MyApp.urls')),  
-
-] 
