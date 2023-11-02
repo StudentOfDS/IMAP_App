@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Image Processing Hub</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Processing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Image Processing Hub</h1>
-        <nav>
-            <ul>
-                <li><a href="#image-to-array">Convert Image to Array</a></li>
-                <li><a href="#quality-improvement">Improve Image Quality</a></li>
-                <!-- Add more navigation items for other features -->
-            </ul>
-        </nav>
+      <h1>Image Processing Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="#image-to-array">Convert Image to Array</a></li>
+          <li><a href="#quality-improvement">Improve Image Quality</a></li>
+          <!-- Add more navigation items for other features -->
+        </ul>
+      </nav>
     </header>
 
     <section id="image-to-array">
-        <h2>Convert Image to Array</h2>
-        <p>Upload an image and convert it to an array for further processing.</p>
-        <input type="file" id="image-upload">
-        <button id="convert-button">Convert</button>
-        <div id="array-output">
-            <!-- Display the array here -->
-        </div>
+      <h2>Convert Image to Array</h2>
+      <p>Upload an image and convert it to an array for further processing.</p>
+      <input type="file" id="image-upload" />
+      <button id="convert-button">Convert</button>
+      <div id="array-output">
+        <!-- Display the array here -->
+      </div>
     </section>
 
     <section id="quality-improvement">
-        <h2>Improve Image Quality</h2>
-        <p>Enhance the quality of an image using various techniques.</p>
-        <input type="file" id="quality-upload">
-        <button id="improve-button">Improve</button>
-        <img id="improved-image" src="" alt="Improved Image">
+      <h2>Improve Image Quality</h2>
+      <p>Enhance the quality of an image using various techniques.</p>
+      <input type="file" id="quality-upload" />
+      <button id="improve-button">Improve</button>
+      <img id="improved-image" src="" alt="Improved Image" />
     </section>
 
     <!-- Add more sections for other image processing features -->
 
     <footer>
-        <p>&copy; 2023 Image Processing Hub</p>
+      <p>&copy; 2023 Image Processing Hub</p>
     </footer>
-</body>
+  </body>
 </html>

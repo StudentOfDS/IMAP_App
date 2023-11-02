@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+%s@k&@5k4iz67-jv%q61a^9)fd9(i4vf1p=7h6j5!wg99acgo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -54,7 +54,8 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'MyApp', 'Templates')],  # Updated 'DIRS' path
+        # Updated 'DIRS' path
+        'DIRS': [os.path.join(BASE_DIR, 'MyApp', 'Templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -113,7 +114,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'MyApp', 'static')]  # Added STATICFILES_DIRS
+# Added STATICFILES_DIRS
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'MyApp', 'static')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
